@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+wordcloud
+spacy
+keybert
+scikit-learn
+transformers
+nltk
+streamlit
+pyngrok
