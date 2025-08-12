@@ -1,20 +1,16 @@
-# 🚀 Amazon Fine Food Reviews — Aspect-Based Sentiment Analysis (ABSA)
+# 🍽️ Amazon Fine Food Reviews — Aspect-Based Sentiment Analysis (ABSA)
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue.svg?style=for-the-badge&logo=python)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-orange?style=for-the-badge&logo=streamlit)](https://streamlit.io/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-
----
+[![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-orange.svg)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ## 📌 Overview
 This project performs **Aspect-Based Sentiment Analysis (ABSA)** on Amazon Fine Food Reviews.  
-It **extracts aspects** (product features) from reviews and determines sentiment *(Positive, Negative, Neutral)* for each aspect,  
-with interactive visualizations.
+It extracts **aspects** (product features) from reviews and determines sentiment (**Positive**, **Negative**, **Neutral**) for each aspect.
 
 ---
 
 ## 📂 Folder Structure
-
 project/
 │
 ├── Amazon_Fine_Food_Analysis.ipynb # Main notebook (Phases 1–6)
@@ -24,52 +20,66 @@ project/
 │
 ├── screenshots/ # UI previews
 │ └── demo_screenshot.png
+│
 └── README.md # Documentation
-
 
 
 
 ---
 
 ## 📸 Demo
-![ABSA App Screenshot](screenshots/demo_screenshot.png)
+![ABSA App Screenshot](screenshot/demo_screenshot.png)
 
 ---
 
-## 🚀 How to Run (Google Colab)
-1. **Upload** the notebook to Colab.
-2. Add your **NGROK_AUTH_TOKEN** to Colab Secrets.
-3. Run the cells in order *(Phases 1–6)*.
-4. **For Streamlit App**:
+## 🚀 How to Run
+
+### **Option 1 — Run in Google Colab**
+1. Upload the notebook to **Google Colab**.
+2. Add your **NGROK** token to Colab Secrets (`NGROK_AUTH_TOKEN`).
+3. Run all cells in order (Phases 1–6).
+4. For the Streamlit app:
    - Run Phase 6 cells.
-   - Click the **ngrok public link** to open the app.
+   - Click the generated ngrok link to open the app.
 
----
+### **Option 2 — Run Locally**
+```bash
+# 1️⃣ Clone this repository
+git clone https://github.com/MAhsaanUllah/Aspect-Based-Sentiment-Analysis-ABSA.git
+cd Aspect-Based-Sentiment-Analysis-ABSA
 
-## ✨ Features
-- 🧹 **Preprocessing** — lowercase, punctuation & stopword removal
-- 📌 **Aspect Extraction** — spaCy + KeyBERT
-- 💬 **Aspect-Level Sentiment** — Positive / Negative / Neutral
-- 📊 **Visualizations** — Bar charts, pie charts, word clouds
-- ☁ **Colab + ngrok** — Easy public deployment
+# 2️⃣ Create virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Mac/Linux
+venv\Scripts\activate     # On Windows
 
----
+# 3️⃣ Install dependencies
+pip install -r requirements.txt
 
-## 📈 Evaluation (Optional for Labeled Data)
-- **Aspect Extraction** — Precision / Recall / F1
-- **Sentiment Classification** — Accuracy, Macro F1, Confusion Matrix
-- **Learning Curves** — Detect overfitting / underfitting
+# 4️⃣ Run the app
+streamlit run app.py
+📊 Features
+✅ Text preprocessing (lowercasing, punctuation & stopword removal)
+✅ Aspect extraction using spaCy + KeyBERT
+✅ Aspect-level sentiment classification
+✅ Visualization (bar charts, word clouds)
+✅ Works with Google Colab + ngrok for public links
 
----
+📈 Evaluation
+Aspect Extraction: Precision / Recall / F1
 
-## 🔮 Future Improvements
-- 🌎 Multi-language support
-- 🤖 Transformer-based fine-tuning
-- ⏳ Timeline-based sentiment trends
-- ☁ Permanent deployment (Streamlit Cloud / HuggingFace Spaces)
+Sentiment Classification: Accuracy, Macro F1, Confusion Matrix
 
----
+Learning Curves: Detect overfitting/underfitting
 
-## 📜 License
-This project is licensed under the **MIT License**.
+🔮 Future Improvements
+Multi-language support
 
+Fine-tuned transformer models
+
+Timeline-based sentiment trends
+
+Permanent deployment (Streamlit Cloud, HuggingFace Spaces)
+
+📜 License
+This project is licensed under the MIT License.
