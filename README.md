@@ -7,8 +7,10 @@
 ---
 
 ## 📌 Overview  
-This project performs **Aspect-Based Sentiment Analysis (ABSA)** on the **Amazon Fine Food Reviews Dataset**.  
-It extracts **aspects** (e.g., "taste", "delivery", "price") from customer reviews and assigns **sentiment polarity** (*Positive, Negative, Neutral*) to each aspect.
+This project applies **Aspect-Based Sentiment Analysis (ABSA)** on the **Amazon Fine Food Reviews Dataset**.  
+It extracts **specific aspects** from reviews (e.g., *taste, delivery, price*) and assigns **sentiment polarity** (*Positive, Negative, Neutral*) to each aspect.  
+
+🔑 Core stack: **spaCy**, **KeyBERT**, **Streamlit**, and **ngrok (for Colab deployment)**.  
 
 ---
 
@@ -32,40 +34,51 @@ Aspect-Based-Sentiment-Analysis-ABSA/
 ---
 
 ## 🚀 How to Run (Google Colab)  
-1. **Open the notebook in Google Colab**  
+1. Open the notebook in **Google Colab**.  
 2. Add your **NGROK token** to Colab Secrets (`NGROK_AUTH_TOKEN`).  
-3. Run the notebook cells in order (Phases 1–6).  
+3. Run all notebook cells sequentially (Phases 1–6).  
 4. For the **Streamlit App**:  
-   - Run Phase 6 cells.  
-   - Click the ngrok URL to access the app.  
+   - Execute Phase 6.  
+   - Click the generated ngrok URL to open the live app.  
 
 ---
 
 ## 📊 Features  
-✅ Text preprocessing (lowercasing, punctuation & stopword removal)  
-✅ Aspect extraction using **spaCy** + **KeyBERT**  
-✅ Aspect-level sentiment classification  
-✅ Visualizations (bar charts, word clouds)  
-✅ Runs directly in **Google Colab** with **ngrok** for public access  
+- ✅ **Text Preprocessing** → Lowercasing, punctuation & stopword removal.  
+- ✅ **Aspect Extraction** → Using **spaCy** + **KeyBERT**.  
+- ✅ **Aspect-Level Sentiment** → Assigns polarity per aspect.  
+- ✅ **Visualizations** → Bar charts & word clouds for interpretability.  
+- ✅ **One-Click Deployment** → Run directly in Colab with ngrok public URL.  
 
 ---
 
 ## 📈 Evaluation (Optional for Labeled Data)  
-- **Aspect Extraction** → Precision / Recall / F1-score  
-- **Sentiment Classification** → Accuracy, Macro F1, Confusion Matrix  
-- **Learning Curves** → Detect overfitting / underfitting  
+- **Aspect Extraction** → Precision / Recall / F1-score.  
+- **Sentiment Classification** → Accuracy, Macro-F1, Confusion Matrix.  
+- **Learning Curves** → Detect overfitting / underfitting patterns.  
 
 ---
 
 ## 🔮 Future Improvements  
-- Multi-language support 🌍  
-- Fine-tuned transformer models 🤖  
-- Timeline-based sentiment trends 📅  
-- Permanent deployment on **Streamlit Cloud** / **HuggingFace Spaces**  
+- 🌍 Multi-language support for non-English datasets.  
+- 🤖 Fine-tuned transformer-based ABSA models.  
+- 📅 Timeline-based sentiment tracking.  
+- ☁️ Permanent deployment on **Streamlit Cloud** or **HuggingFace Spaces**.  
 
 ---
 
 ## 📜 License  
-This project is licensed under the **MIT License** — feel free to use and modify.
+This project is licensed under the **MIT License** — free to use, modify, and share.  
+
+---
+
+## ✨ Recruiter Note  
+This project demonstrates:  
+- **Advanced NLP Techniques** → Aspect extraction + sentiment classification.  
+- **Practical Application** → Turns raw reviews into actionable insights for businesses.  
+- **Deployment Skills** → End-to-end pipeline with Colab + Streamlit app.  
+
+🔗 Highly relevant for roles in **NLP Engineering, Data Science, and Machine Learning**.  
+
 
 
